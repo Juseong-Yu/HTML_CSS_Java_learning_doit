@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>position 속성으로 요소 위치 지정하기</title>
+    <style>
+        #static { position: static; }
+        #relative-1 { position:relative; }
+        #relative-2 {
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        #fixed {
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            position: fixed;
+            right: 30px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="static">아랍어 문법은 너무너무 어렵습니다.</p>
+    <p id="relative-1">하지만 어려워도 해내야 합니다.</p>
+    <p id="relative-2">하하하하하하하ㅏ</p>
+    <p id="fixed"></p>
+</body>
+</html>
