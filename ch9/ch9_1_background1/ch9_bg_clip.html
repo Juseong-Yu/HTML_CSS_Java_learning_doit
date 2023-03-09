@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 적용 범위 지정하기</title>
+    <style>
+        .desc {
+            background-color: antiquewhite;
+            border: 5px dotted black;
+            width: 350px;
+            padding: 20px;
+        }
+        #clip-border { background-clip: border-box; }
+        #clip-padding { background-clip: padding-box; }
+        #clip-content { background-clip: content-box; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="desc" id="clip-border">
+            <h1>레드향</h1>
+            <p>.........</p>
+        </div>
+        <div class="desc" id="clip-padding">
+            <h1>레드향</h1>
+            <p>.........</p>
+        </div>
+        <div class="desc" id="clip-content">
+            <h1>레드향</h1>
+            <p>.........</p>
+        </div>
+    </div>
+</body>
+</html>
