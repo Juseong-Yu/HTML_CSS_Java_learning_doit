@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치에 따라 자식 요소 선택하기</title>
+    <style>
+        .contents :nth-child(3){
+            background-color: #ffff00;
+        }
+        .contents p:nth-of-type(3){
+            background-color: #00b900;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <h2>이용 안내</h2>
+        <p>111111111</p>
+        <p>222222222222</p>
+        <h2>프로야구  h2</h2>
+        <p>333333333333333</p>
+    </div>
+</body>
+</html>

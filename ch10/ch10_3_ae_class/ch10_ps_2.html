@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택된 라이오 버튼의 스타일 적용하기</title>
+    <style>
+        #signup input:checked + label{
+            color: red;
+            font-weight: bold;
+        }
+        
+        fieldset { 
+            display: block;
+            width: 600px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        #signup input[tyle=text], input[type=tel]{
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id = "signup">
+        <legend>객실 형태</legend>
+        <ul>
+            <li>
+                <input type="radio" name="room" id ="basic">
+                <label for="basic">기본형(최대 2인)</label>
+            </li>
+            <li>
+                <input type="radio" name="room" id ="family">
+                <label for="family">가족형(최대 8인)</label>
+            </li>
+        </ul>
+    </fieldset>
+</body>
+</html>
